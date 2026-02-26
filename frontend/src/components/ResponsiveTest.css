@@ -1,0 +1,84 @@
+/* Responsive Test Component Styles */
+
+.responsive-test-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.responsive-test-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-heading);
+}
+
+.grid-responsive {
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-6);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  transition: var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card h2 {
+  color: var(--text-heading);
+  margin-bottom: var(--spacing-3);
+}
+
+.card p {
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.btn-container {
+  display: flex;
+  gap: var(--spacing-4);
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-test {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.form-test .form-input,
+.form-test .form-select {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .responsive-test-container {
+    padding: 1rem;
+  }
+  
+  .btn-container {
+    flex-direction: column;
+  }
+  
+  .grid-responsive {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .responsive-test-container {
+    padding: 0.5rem;
+  }
+  
+  .card {
+    padding: var(--spacing-4);
+  }
+}

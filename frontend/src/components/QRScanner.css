@@ -1,0 +1,120 @@
+.qr-scanner {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.scanner-container {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.scanner-inactive .scanner-placeholder {
+  background: #e9ecef;
+  border: 2px dashed #adb5bd;
+  border-radius: 8px;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+
+.camera-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.scanner-inactive .scanner-placeholder p {
+  color: #6c757d;
+  font-size: 16px;
+  margin: 0;
+}
+
+.scanner-active .scanner-preview {
+  background: #000;
+  border-radius: 8px;
+  height: 300px;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.scanner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #007bff;
+  pointer-events: none;
+}
+
+.scan-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #007bff;
+  animation: scan 2s infinite linear;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(300px);
+  }
+}
+
+.scanner-active .scanner-preview p {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #545b62;
+}
+
+.scanner-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 15px;
+  border: 1px solid #f5c6cb;
+}

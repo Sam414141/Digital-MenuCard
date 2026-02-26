@@ -1,0 +1,120 @@
+/* Inventory Reports Page Styles */
+
+.inventory-reports {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    padding: 80px 20px 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-header {
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.page-header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 16px 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.page-header p {
+    color: #6b7280;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Tabs */
+.tabs-container {
+    max-width: 1400px;
+    margin: 0 auto 30px;
+}
+
+.tabs {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: none;
+    background: transparent;
+    color: #6b7280;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    flex: 1;
+    justify-content: center;
+}
+
+.tab:hover {
+    color: #374151;
+    background: #f9fafb;
+}
+
+.tab.active {
+    background: #3b82f6;
+    color: white;
+}
+
+/* Content Container */
+.content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Coming Soon Placeholder */
+.coming-soon {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 80px 40px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .inventory-reports {
+        padding: 60px 10px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tabs {
+        padding: 4px;
+        overflow-x: auto;
+    }
+
+    .tab {
+        padding: 10px 16px;
+        font-size: 14px;
+        min-width: auto;
+    }
+
+    .coming-soon {
+        padding: 40px 20px;
+        font-size: 16px;
+    }
+}

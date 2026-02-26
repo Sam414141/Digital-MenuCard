@@ -1,0 +1,93 @@
+/* 🔐 PROFESSIONAL ADMIN REGISTER - UNIFIED THEME */
+@import url('./AuthCommon.css');
+
+/* Specific overrides for admin register */
+
+.admin-register {
+  /* Uses common container styles from AuthCommon.css */
+}
+
+.register-container {
+  /* Uses common card styles from AuthCommon.css */
+  max-width: 450px;
+}
+
+.admin-register-header {
+  /* Uses common header styles from AuthCommon.css */
+}
+
+.admin-register-header h1 {
+  /* Inherits from auth-common-header h1 */
+}
+
+.admin-register-header p {
+  /* Inherits from auth-common-header p */
+}
+
+/* Form specific styles */
+.admin-register-form {
+  /* Uses common form styles from AuthCommon.css */
+}
+
+/* Form groups */
+.admin-register .form-group {
+  /* Uses common form-group styles from AuthCommon.css */
+  margin-bottom: var(--spacing-5);
+}
+
+.admin-register .form-group label {
+  /* Uses common form-group label styles from AuthCommon.css */
+}
+
+/* Input fields */
+.admin-register-input-wrapper {
+  /* Uses common input-wrapper styles from AuthCommon.css */
+}
+
+.admin-register-input {
+  /* Uses common input styles from AuthCommon.css */
+}
+
+/* Submit button */
+.admin-register-button {
+  /* Uses common auth-button styles from AuthCommon.css */
+}
+
+/* Login link */
+.login-link {
+  display: block;
+  text-align: center;
+  margin-top: var(--spacing-6);
+  font-size: var(--font-size-base);
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.login-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Auth footer */
+.admin-register-footer {
+  /* Uses common auth-footer styles from AuthCommon.css */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .admin-register-header h1 {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-register-header h1 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-5);
+  }
+  
+  .admin-register .form-group {
+    margin-bottom: var(--spacing-4);
+  }
+}

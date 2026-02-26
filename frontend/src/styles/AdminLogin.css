@@ -1,0 +1,130 @@
+/* 🔐 PROFESSIONAL ADMIN LOGIN - UNIFIED THEME */
+@import url('./AuthCommon.css');
+
+/* Specific overrides for admin login */
+
+.admin-login {
+  /* Uses common container styles from AuthCommon.css */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--spacing-4);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+}
+
+.admin-login-card {
+  background: white;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+  padding: var(--spacing-8);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.admin-login-card h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-6);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.admin-form-group {
+  margin-bottom: var(--spacing-4);
+  text-align: left;
+}
+
+.admin-form-group input {
+  width: 100%;
+  padding: var(--spacing-3);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
+  transition: var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.admin-form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.admin-form-group input.error {
+  border-color: var(--error-color);
+}
+
+.admin-field-error {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  color: var(--error-color);
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-1);
+  padding-left: var(--spacing-1);
+}
+
+.admin-error-message {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  background-color: var(--error-bg);
+  color: var(--error-color);
+  padding: var(--spacing-3);
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-4);
+  font-size: var(--font-size-sm);
+  border: 1px solid var(--error-border);
+}
+
+.admin-login-button {
+  width: 100%;
+  padding: var(--spacing-3);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  margin-bottom: var(--spacing-4);
+}
+
+.admin-login-button:hover:not(:disabled) {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.admin-login-button:disabled {
+  background-color: var(--gray-400);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.admin-register-button {
+  width: 100%;
+  padding: var(--spacing-3);
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.admin-register-button:hover:not(:disabled) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.admin-register-button:disabled {
+  border-color: var(--gray-400);
+  color: var(--gray-400);
+  cursor: not-allowed;
+}

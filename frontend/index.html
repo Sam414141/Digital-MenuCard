@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital-MenuCard</title>
+    <script>
+      // Polyfill for simple-peer and other Node.js globals
+      if (typeof window !== 'undefined') {
+        if (!window.global) window.global = window;
+        if (!window.globalThis) window.globalThis = window;
+        if (!window.process) window.process = { env: {} };
+        if (typeof window.Buffer === 'undefined') {
+          window.Buffer = { isBuffer: function() { return false; } };
+        }
+      }
+    </script>
+    <!-- Razorpay Checkout Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

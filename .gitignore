@@ -1,0 +1,23 @@
+# Environment files
+.env
+.env.local
+.env.production
+
+# Certificates and keys
+backend/certificates/
+
+# Logs
+backend/logs/
+*.log
+
+# Dependencies
+node_modules/
+
+# Build outputs
+frontend/dist/
+backend/dist/
+
+# Temporary files
+temp/
+tmp/
+*.tmp

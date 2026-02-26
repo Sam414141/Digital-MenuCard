@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "back": "cd backend && node index.js",
+    "front": "cd frontend && npm run dev -- --host"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.20.4",
+    "nodemailer": "^7.0.6"
+  },
+  "devDependencies": {
+    "vite-plugin-node-polyfills": "^0.24.0"
+  }
+}
